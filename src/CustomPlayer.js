@@ -11,7 +11,7 @@ export const CustomPlayer = (props) => {
 
   // call when the end of the media resource is reached (currentTime == duration)
   const onEnded = () => {
-      
+
     // fetch something
 
     setIsShowing(true);
@@ -27,7 +27,7 @@ export const CustomPlayer = (props) => {
       title: source.title,
     },
     onPlayerCreated: (playerInstance) => {
-      // Hide header bar when title are not included in the source.
+      // hide header bar when title are not included in the source.
       if (!source.title) {
         const headerBar = document.getElementsByClassName("vjs-header-bar")[0];
         headerBar?.classList.add("vjs-hidden");
