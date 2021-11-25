@@ -1,23 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import { CustomPlayer } from "./CustomPlayer";
+import "./App.css";
 
 function App() {
+  const source = {
+    poster:
+      "https://qoder.byteark.com/images/video-frames/1/GU/cg/1GUcgd3XwsmD-large.jpg",
+    src: "https://inox-bhm9yr.cdn.byteark.com/video-objects/RI2PimuHxDXw/playlist.m3u8",
+    type: "application/x-mpegURL",
+      title: "Big Buck Bunny",
+  };
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <span className="title">Custom Player</span>
+      <CustomPlayer source={source} />
     </div>
   );
 }

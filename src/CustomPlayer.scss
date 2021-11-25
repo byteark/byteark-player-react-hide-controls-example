@@ -1,0 +1,51 @@
+.custom-player {
+  position: relative;
+  width: 100%;
+
+  .video-js .vjs-control-bar .vjs-progress-control,
+  .video-js .vjs-control-bar .vjs-fullscreen-control,
+  .video-js .vjs-control-bar .vjs-picture-in-picture-control,
+  .video-js .vjs-setting-menu-button {
+    display: none !important;
+  }
+}
+
+.custom-player .extra-content-container {
+  position: absolute;
+  z-index: 5;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.8);
+
+  .extra-content {
+    position: relative;
+    width: 250px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff;
+
+    .close-button {
+      position: absolute;
+      border: none;
+      background: transparent;
+      cursor: pointer;
+      right: 10px;
+      top: 10px;
+      color: #000000;
+      font-size: 16px;
+    }
+  }
+}
+
+.custom-player.extra-content-show {
+  .video-js .vjs-control-bar {
+    display: none;
+  }
+}
