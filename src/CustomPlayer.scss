@@ -2,7 +2,10 @@
   position: relative;
   width: 100%;
 
-  .video-js .vjs-control-bar .vjs-button:not(.vjs-play-control):not(.vjs-mute-control) {
+  .video-js .vjs-control-bar .vjs-progress-control,
+  .video-js
+    .vjs-control-bar
+    .vjs-button:not(.vjs-play-control):not(.vjs-mute-control) {
     display: none;
   }
 }
