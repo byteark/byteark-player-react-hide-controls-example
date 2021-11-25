@@ -2,11 +2,8 @@
   position: relative;
   width: 100%;
 
-  .video-js .vjs-control-bar .vjs-progress-control,
-  .video-js .vjs-control-bar .vjs-fullscreen-control,
-  .video-js .vjs-control-bar .vjs-picture-in-picture-control,
-  .video-js .vjs-setting-menu-button {
-    display: none !important;
+  .video-js .vjs-control-bar .vjs-button:not(.vjs-play-control):not(.vjs-mute-control) {
+    display: none;
   }
 }
 
@@ -20,7 +17,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.2);
 
   .extra-content {
     position: relative;

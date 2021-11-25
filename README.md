@@ -12,6 +12,7 @@ This project is an example usage for disable controls for ByteArk Player React
 - Hide header bar when title are not included in the source
 - Disable double click to open the full screen
 - Add ended event function
+- Extra content component will display when player fired ended event
 
 ## Read more
 
